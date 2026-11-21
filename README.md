@@ -35,19 +35,18 @@ The offline v29 APK this port starts from only had a maxed account and bot battl
 
 ## Known issues (0.1 beta)
 
-- Battles run at about 16-20 fps (menus at 60 fps); 30 fps is the next goal.
+- Some maps run at about 16-20 fps; 30 fps is the next goal.
 - The first start takes about 1-2 minutes, and a match can freeze for a few seconds at its start while it loads.
-- **Friendly battles do not work.**
-- **Mega Boxes give less than they should.**
-- **Boxes give a fixed amount of power points to each brawler.**
+- Friendly battles do not work.
+- Mega Boxes give less than they should.
+- Boxes give a fixed amount of power points to each brawler.
+- Special offer boxes do not give the right amount of boxes
 - The battle log shows results but not the other players or replays.
 - Some skin previews or Brawl Pass pictures can stay blank if the picture download failed.
 - New worlds start with every bot at 0 trophies and one brawler, so early opponents mostly use the same brawler until bots unlock more.
 - Not done yet: club invites, "wants to play" requests from bots, kicking or promoting members yourself, bot battle logs, Power Play.
   Asking to join an invite-only club gets no answer.
 - Saving the bot world after a battle can cause a short hitch.
-- Suspending the Vita in the middle of a match is not safe yet: finish the match first.
-- No online play, ever: everything runs on the console.
 <!-- add new known issues above this line -->
 
 ## Requirements

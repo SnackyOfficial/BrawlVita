@@ -1,0 +1,14 @@
+# Import description for the kubridge v0.1 plugin (TheOfficialFloW/kubridge release v0.1).
+# The library NID 0x6DB9389B and the three function NIDs were read from the plugin's own export table
+# (zlib-decompressed segment of kubridge.skprx SHA-256 0773D8D2...7106). kuPower* are not exported by v0.1.
+modules:
+  kubridge:
+    nid: 0x6DB9389B
+    libraries:
+      kubridge:
+        kernel: false
+        nid: 0x6DB9389B
+        functions:
+          kuKernelAllocMemBlock: 0x2EF7C290
+          kuKernelFlushCaches: 0x38B70744
+          kuKernelCpuUnrestrictedMemcpy: 0x91D9CABC

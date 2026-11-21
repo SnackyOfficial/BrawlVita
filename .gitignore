@@ -1,0 +1,33 @@
+# build output
+build/
+third_party/kubridge_stub/build/
+third_party/kubridge_stub/gen/
+*.vpk
+*.elf
+*.self
+*.velf
+
+# NEVER commit game files (see LEGAL.md)
+*.apk
+*.apkm
+*.xapk
+*.so
+*.dex
+*.psp2dmp
+ux0_data_BrawlVita/
+assets/*
+!assets/livearea/
+
+# local / editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+__pycache__/
+
+# installer build output
+BrawlVitaInstaller.exe
+installer/build/
+installer/dist/
+*.spec

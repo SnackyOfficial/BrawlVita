@@ -1,0 +1,4 @@
+# keep Unix line endings (shell scripts run inside Linux containers); Windows ones only for .bat
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary

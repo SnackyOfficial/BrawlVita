@@ -99,6 +99,8 @@ class Job:
     def run(self):
         o = self.o
         stage = tempfile.mkdtemp(prefix="brawlvita_") if o["mode"] != "folder" else os.path.join(o["folder"], "BrawlVita_install")
+        # the folder picker returns "C:/x/y": normalise once so every path below uses the same separators
+        stage = os.path.abspath(stage)
         data = os.path.join(stage, "ux0_data_BrawlVita")
         os.makedirs(os.path.join(data, "lib"), exist_ok=True)
         try:
@@ -139,10 +141,10 @@ class Job:
             entries = [i for i in z.infolist() if i.filename.startswith("assets/") and not i.is_dir()]
             if o["no_music"]:
                 entries = [i for i in entries if i.filename.split("/")[1] not in ("music", "sfx")]
-            base = os.path.join(data, "assets") + os.sep
+            base = os.path.normcase(os.path.abspath(os.path.join(data, "assets")) + os.sep)
             for k, info in enumerate(entries):
                 dest = os.path.abspath(os.path.join(data, info.filename))
-                if not dest.startswith(base):
+                if not os.path.normcase(dest).startswith(base):
                     raise RuntimeError("unsafe entry " + info.filename)
                 os.makedirs(os.path.dirname(dest), exist_ok=True)
                 with z.open(info) as src, open(dest, "wb") as dst:

@@ -118,9 +118,8 @@ Our code is released under the [MIT License](LICENSE).
 
 ## Credits
 
-- **SnackyOfficial** - BrawlVita: idea, testing, direction
+- [S.B.](https://github.com/PeterHackz) - Original Offline V29
 - [vitaSDK](https://vitasdk.org) and [vitaGL](https://github.com/Rinnegatamante/vitaGL) by Rinnegatamante
 - [kubridge](https://github.com/TheOfficialFloW/kubridge) by TheOfficialFloW
 - [VitaShell](https://github.com/TheOfficialFloW/VitaShell) by TheOfficialFloW
-- The PS Vita so-loader ports that showed the way
-- **Claude** (Anthropic) - code, reverse-engineering notes and tests, written together with SnackyOfficial
+- **Claude** (Anthropic) - code, reverse-engineering notes and tests
